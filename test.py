@@ -204,6 +204,6 @@ if __name__ == '__main__':
                         default=osp.join(working_dir, '../facedata/1024.labels.npy'))
 
     # Test args
-    parser.add_argument('--checkpoint', type=str, metavar='PATH')
+    parser.add_argument('--checkpoint', type=str, metavar='PATH', default='./logs/logs/best.ckpt')
     args = parser.parse_args()
     main(args)
