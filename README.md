@@ -16,7 +16,7 @@ likelihood of linkage between pairs in the sub-graphs.
 - Python 2.7
 - sklearn >= 0.19.1
 
-## Dataset Format
+## Data Format
 Firstly, extract features for IJB-B data, and save the features as an NxD dimensional `.npy` file, in which each row is a D-dimensional feature for a sample. Then, save the labels as an Nx1 dimensional `.npy` file, each row is an integer indicating the identity. Lastly, generate the KNN graph (either by brute force or ANN). The KNN graph should be saved as an Nx(K+1) dimensional `.npy` file, and in each row, the first element is the node index, and the following K elements are the indices of its KNN nodes.
 
 For training, featrues+labels+knn_graphs are needed. For testing, only features+knn_graphs are needed, but if you need to compute accuracy the labels are also needed.
