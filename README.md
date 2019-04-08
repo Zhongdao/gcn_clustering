@@ -1,5 +1,5 @@
 # Linkage-based Face Clustering via Graph Convolution Network 
-This repository contains the code for our CVPR'19 paper [Linkage-based Face Clustering via GCN](https://arxiv.org/abs/1903.11306), by Zhongdao Wang, Liang Zheng, Yali Li and Shengjin Wang, Tsinghua University and Austrilian National University.
+This repository contains the code for our CVPR'19 paper [Linkage-based Face Clustering via GCN](https://arxiv.org/abs/1903.11306), by Zhongdao Wang, Liang Zheng, Yali Li and Shengjin Wang, Tsinghua University and Australian National University.
 
 ![](https://github.com/Zhongdao/gcn_clustering/blob/master/asset/pipeline.jpg)
 
