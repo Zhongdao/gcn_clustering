@@ -44,3 +44,5 @@ If you find GCN-Clustering helps your research, please cite our paper:
   year={2019}
 }
 ```
+## Ackownledgement
+I borrowed some code on pseudo label propagation from [CDP](https://github.com/XiaohangZhan/cdp), many thanks to [Xiaohang Zhan](https://github.com/XiaohangZhan)!
