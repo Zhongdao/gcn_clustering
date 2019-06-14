@@ -86,7 +86,7 @@ def main(args):
     print('------------------------------------')
     print('Number of nodes: ', len(labels))
     print('Precision   Recall   F-Sore   NMI')
-    p,r,f = bcubed(final_pred, labels)
+    p,r,f = bcubed(labels, final_pred)
     nmi = normalized_mutual_info_score(final_pred, labels)
     print(('{:.4f}    '*4).format(p,r,f, nmi))
 
@@ -161,9 +161,6 @@ def validate(loader, net, crit):
                 n = n.item()
 	        edges.append([nl[cidb], nl[n]])
                 scores.append(pred[b*args.k_at_hop[0]+j,1].item())
-                #print(nl[cidb],nl[n])
-                #print(pred[b*bs+j,1].item(),labels[b*bs+j])
-            #time.sleep(10)
     edges = np.asarray(edges)
     scores = np.asarray(scores)
     return edges, scores
