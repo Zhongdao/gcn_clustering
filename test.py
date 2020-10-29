@@ -151,7 +151,8 @@ def validate(loader, net, crit):
                         data_time=data_time, losses=losses, accs=accs, 
                         precisions=precisions, recalls=recalls))
 
-	node_list = node_list.long().squeeze().numpy()
+	# node_list = node_list.long().squeeze().numpy()
+	node_list = node_list.long().numpy()
         bs = feat.size(0)
         for b in range(bs): 
             cidb = cid[b].int().item() 
