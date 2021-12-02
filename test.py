@@ -94,7 +94,7 @@ def main(args):
     print('------------------------------------')
     print('After removing singleton culsters, number of nodes: ', len(labels))
     print('Precision   Recall   F-Sore   NMI')
-    p,r,f = bcubed(final_pred, labels)
+    p,r,f = bcubed(labels, final_pred)
     nmi = normalized_mutual_info_score(final_pred, labels)
     print(('{:.4f}    '*4).format(p,r,f, nmi))
     
